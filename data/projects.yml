@@ -1,34 +1,27 @@
-- name: Longest Word Game
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
+- name: CIET - Can I Eat This
+  description: An application for foreign vegans/vegetarians in Japan to scan food products and check if it meets their dietary restricitons.
+  image: assets/CIET1.png
+  url: https://www.ciet.lol/
+  github: https://github.com/flxlng/CIET
   online: true
 
-- name: Movie Watchlist
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
+- name: Quanki
+  description: With Quanki you can easily create a quiz from a pdf file of your notes, lecture slides, essays, academic texts etc..
+  image: assets/Quanki.png
+  url: https://quanki.lol/
+  github: https://github.com/flxlng/quiz-creaitor-react
   online: true
 
-- name: Airbnb
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
+- name: Power UP!
+  description: A marketplace app where users can rent special powers from eachother.
+  image: assets/PowerUp1.png
+  url: https://www.power-up.lol/
+  github: https://github.com/flxlng/power-up
   online: true
 
-- name: Final project
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
-  online: true
-
-- name: Yelp
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
+- name: Builders Weekend Hackathon Project
+  description: A program to create a trailer out of still images.
+  image: assets/BuildersWeekend.png
+  url:
+  github: https://github.com/Octosub/builders_weekend
   online: false

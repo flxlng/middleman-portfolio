@@ -1,15 +1,37 @@
 <!doctype html>
 <html>
   <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z67VJYY2Y0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z67VJYY2Y0');
+  </script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Portfolio" %></title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
+
+    <title><%= current_page.data.title || "Felix Lange - Sofware Engineer" %></title>
+
+
+    <!-- FAVICON -->
+    <%= favicon_tag '../images/favicon.ico' %>
+
+    <meta name="description" content="This website showcases the projects that I have been working on.">
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="Felix Lange - Sofware Engineer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="felix-lange.me" />
+    <meta property="og:image" content="<%= image_path 'MY_OG_IMAGE_WITH_RIGHT_SIZE.png' %>" />
+    <meta property="og:description" content="This website showcases the projects that I have been working on." />
+    <meta property="og:site_name" content="Felix Lange - Sofware Engineer" />
   </head>
   <body>
     <%= yield %>

@@ -1,6 +1,12 @@
 <div class="row justify-content-center banner">
   <div class="col-12 d-flex flex-column justify-content-center align-items-center h-100">
-    <%= image_tag 'placeholder.png', alt: "profile photo", class: 'avatar' %>
-    <h1 class="title-main">Portfolio</h1>
+    <h1 class="title-main">Welcome to my Profile</h1>
+    <%= image_tag 'https://avatars.githubusercontent.com/u/150349821?v=4', height: "200", alt: "profile photo", class: 'avatar' %>
+    <ol id="profile-links-list" class="row">
+      <li class="col-3"><a href="#about-container" class="profile-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+      <li class="col-3"><a href="#projects-container" class="profile-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+      <li class="col-3"><a href="#social-container" class="profile-link"><i class="fa-solid fa-at"></i> Contact</a></li>
+      <li class="col-3"><a href="../assets/CV-FelixLange2024.pdf" class="profile-link"><i class="fa-solid fa-file"></i> CV</a>
+    </ol>
   </div>
 </div>
