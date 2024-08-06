@@ -47,7 +47,7 @@ body {
   top: -5vh;
   left: -20vw;
   width: 120vw;
-  height: 20vh;
+  height: 51vh;
   background: rgba(#f4f4f4, 1);
   z-index: -1;
   transform: skewY(-3deg);
@@ -57,10 +57,10 @@ body {
 .diagonal::after {
   content: "";
   position: absolute;
-  top: 27vh;
+  top: 23vh;
   left: -20vw;
   width: 120vw;
-  height: 20vh;
+  height: 51vh;
   background: rgba($gray-dark, 0.5);
   z-index: -1;
   transform: skewY(3deg);
@@ -69,6 +69,7 @@ body {
 
 #about {
   z-index: 1;
+  margin-top: -5vh;
 }
 
 // #social {
