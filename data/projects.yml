@@ -25,7 +25,7 @@
 - name: Builders Weekend Hackathon Project
   description: A program to create a trailer out of still images.
   image: assets/BuildersWeekend.png
-  url:
+  url: "assets/BuildersWeekend.mp4"
   github: https://github.com/Octosub/builders_weekend
   online: fals
   logos: [logos/ruby.png, logos/anthropic.png]
