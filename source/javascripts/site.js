@@ -28,3 +28,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const avatar = document.querySelector('.avatar');
+  let isAnimating = true;
+
+  avatar.addEventListener('click', function() {
+    if (isAnimating) {
+      // Stop the animation
+      avatar.style.animation = 'none';
+      avatar.style.transform = getComputedStyle(avatar).transform;
+    } else {
+      console.log("restarting spinning");
+      // Restart the animation
+      avatar.style.animation = '';
+      avatar.style.transform = '';
+    }
+    isAnimating = !isAnimating;
+  });
+});

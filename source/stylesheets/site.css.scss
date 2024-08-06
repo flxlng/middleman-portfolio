@@ -14,11 +14,63 @@
 
 // source/stylesheets/site.css.scss
 body {
-  background: #f0f0f0;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  // background: #f0f0f0;
+  // background-size: cover;
+  // background-attachment: fixed;
+  // background-position: center;
   // transition: background-image 0.5s ease-in-out;
   // position: relative;
   // background-image: url("hamburg.jpg");
+
 }
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 95vh;
+  background: url('../images/hamburg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.diagonal {
+  position: relative;
+  // z-index: 0;
+}
+
+.diagonal::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -20vw;
+  width: 120vw;
+  height: 150px;
+  background: rgba(#f4f4f4, 1);
+  z-index: -1;
+  transform: skewY(-3deg);
+  transform-origin: 0;
+}
+
+// .diagonal::after {
+//   content: "";
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100px;
+//   background: rgba(255, 255, 255, 0.05);
+//   z-index: -1;
+//   transform: skewY(3deg);
+//   transform-origin: 0;
+// }
+
+#about {
+  z-index: 1;
+}
+
+// #social {
+//   background-color: rgba(white, 0.2);
+// }
