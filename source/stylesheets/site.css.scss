@@ -61,7 +61,8 @@ body {
   left: -20vw;
   width: 120vw;
   height: 51vh;
-  background: rgba($gray-dark, 0.5);
+  background-image: url('../images/fuji.jpeg');
+  // background: rgba($gray-dark, 0.5);
   z-index: -1;
   transform: skewY(3deg);
   transform-origin: 0;
