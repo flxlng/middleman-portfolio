@@ -14,7 +14,7 @@
   position: relative;
 }
 
-.card-product img {
+.product-card-thumbnail {
   height: 100%;
   width: 184px;
   object-fit: cover;
@@ -59,6 +59,18 @@
     cursor: pointer;
     color: $gray
   }
+}
+
+.card-logos {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.small-logo {
+  height: 20px;
+  width: auto;
+  margin-left: 5px;
 }
 
 // Smallest device

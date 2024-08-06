@@ -4,6 +4,7 @@
   url: https://www.ciet.lol/
   github: https://github.com/flxlng/CIET
   online: true
+  logos: [logos/ruby.png, logos/chatgpt.png]
 
 - name: Quanki
   description: With Quanki you can easily create a quiz from a pdf file of your notes, lecture slides, essays, academic texts etc..
@@ -11,6 +12,7 @@
   url: https://quanki.lol/
   github: https://github.com/flxlng/quiz-creaitor-react
   online: true
+  logos: [logos/react.png, logos/chatgpt.png]
 
 - name: Power UP!
   description: A marketplace app where users can rent special powers from eachother.
@@ -18,10 +20,12 @@
   url: https://www.power-up.lol/
   github: https://github.com/flxlng/power-up
   online: true
+  logos: [logos/ruby.png]
 
 - name: Builders Weekend Hackathon Project
   description: A program to create a trailer out of still images.
   image: assets/BuildersWeekend.png
   url:
   github: https://github.com/Octosub/builders_weekend
-  online: false
+  online: fals
+  logos: [logos/ruby.png, logos/anthropic.png]
