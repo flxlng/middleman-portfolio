@@ -44,28 +44,28 @@ body {
 .diagonal::before {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -5vh;
   left: -20vw;
   width: 120vw;
-  height: 150px;
+  height: 20vh;
   background: rgba(#f4f4f4, 1);
   z-index: -1;
   transform: skewY(-3deg);
   transform-origin: 0;
 }
 
-// .diagonal::after {
-//   content: "";
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100px;
-//   background: rgba(255, 255, 255, 0.05);
-//   z-index: -1;
-//   transform: skewY(3deg);
-//   transform-origin: 0;
-// }
+.diagonal::after {
+  content: "";
+  position: absolute;
+  top: 27vh;
+  left: -20vw;
+  width: 120vw;
+  height: 20vh;
+  background: rgba($gray-dark, 0.5);
+  z-index: -1;
+  transform: skewY(3deg);
+  transform-origin: 0;
+}
 
 #about {
   z-index: 1;
