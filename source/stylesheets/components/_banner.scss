@@ -16,6 +16,21 @@
   }
 }
 
+@keyframes imageMovement {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
 .banner {
   height: 100vh;
   // background: linear-gradient(135deg, #6e8efb, #a777e3);
@@ -24,25 +39,28 @@
 }
 
 .avatar {
-  width: 35%;
+  width: 30%;
   height: auto;
   object-fit: cover;
   // border: 5px solid white;
   border-radius: 50%;
   margin-bottom: 10vh;
+  position: relative;
+  // height: 24.78rem;
+  animation: imageMovement 4s ease-in-out infinite;
   transition: transform 0.3s ease;
-  animation: spin 6s linear infinite;
-  animation-play-state: paused;
+  // animation: spin 6s linear infinite;
+  // animation-play-state: paused;
 
   &:hover {
     cursor: pointer;
     animation-play-state: running;
   }
-
 }
 
 .title-main {
   margin-bottom: 10vh;
+  margin-top: 10vh;
   font-family: 'Roboto', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
