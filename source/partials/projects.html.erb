@@ -5,8 +5,8 @@
         <h2> Projects</h2>
         <div class="cards">
           <% data.projects.each do |project| %>
-            <div class="card-product">
-              <%= image_tag project.image, alt: "project image", class: "product-card-thumbnail"%>
+            <div class="card-product" id="<%= project.name %>">
+              <%= image_tag project.image, alt: "project image", class: "product-card-thumbnail" %>
               <div class="card-product-infos w-100">
                 <div class="d-flex justify-content-between align-items-center">
                   <h2><%= project.name %></h2>
@@ -25,7 +25,7 @@
               </div>
               <div class="card-logos d-flex justify-content-end">
                 <% project.logos.each do |logo| %>
-                  <%= image_tag logo, class: 'small-logo', alt: "#{logo}" %>
+                  <%= image_tag logo, class: 'small-logo', alt: "#{logo}", title: File.basename(logo.split('.').first.capitalize)  %>
                 <% end %>
               </div>
             </div>
