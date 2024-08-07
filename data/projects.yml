@@ -1,15 +1,15 @@
 - name: CIET - Can I Eat This
   description: A mobile app that helps you to find out if you can eat a certain food or not. Especially useful if you cannot read the labels (like me in Japan).
   image: assets/CIET1.png
-  url: https://www.ciet.lol/
+  url: assets/ciet_shortened_cropped.mp4
   github: https://github.com/flxlng/CIET
   online: true
-  logos: [logos/ruby.png, logos/chatgpt.png]
+  logos: [logos/rails.png, logos/chatgpt.png]
 
 - name: Quanki
   description: A web app built with React to create a quiz from a pdf file (e.g. lecture slides).
   image: assets/Quanki.png
-  url: https://quanki.lol/
+  url: assets/quanki_cut.mp4
   github: https://github.com/flxlng/quiz-creaitor-react
   online: true
   logos: [logos/react.png, logos/chatgpt.png]
@@ -20,7 +20,7 @@
   url: https://www.power-up.lol/
   github: https://github.com/flxlng/power-up
   online: true
-  logos: [logos/ruby.png]
+  logos: [logos/rails.png]
 
 - name: Builders Weekend Hackathon Project
   description: A program to create a trailer out of still images. Built for the Builders Weekend Hackathon and awarded by the judges.
@@ -28,4 +28,4 @@
   url: "assets/BuildersWeekend.mp4"
   github: https://github.com/Octosub/builders_weekend
   online: fals
-  logos: [logos/ruby.png, logos/anthropic.png]
+  logos: [logos/rails.png, logos/stability.png]
