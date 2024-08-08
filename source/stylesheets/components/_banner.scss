@@ -100,6 +100,12 @@
       display: none;
     }
   }
+
+  @media (max-width: 768px) {
+    a {
+      font-size: 0.8rem; /* Adjust the font size for mobile devices */
+    }
+  }
 }
 
 .profile-button {
