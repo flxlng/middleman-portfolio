@@ -29,11 +29,27 @@
   left: 0;
   width: 100vw;
   height: 95vh;
-  background: url('../images/hamburg.jpg') no-repeat center center fixed;
+  background: url('../images/fuji.jpg') no-repeat center center fixed;
   background-size: cover;
   opacity: 0.3;
   z-index: -1;
 }
+
+// .fuji-back {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 95vh;
+//   background: url('../images/fuji.jpg') no-repeat center center fixed;
+//   background-size: cover;
+//   opacity: 0.3;
+//   z-index: -1;
+// }
+
+// .fuji-back {
+//   background-image: url(../images/fuji.jpg);
+// }
 
 .diagonal {
   position: relative;
@@ -59,9 +75,10 @@
   top: 23vh;
   left: -20vw;
   width: 120vw;
-  height: 51vh;
-  background-image: url('../images/fuji.jpeg');
+  height: 60vh;
+  background-image: url('../images/fuji.jpg');
   // background: rgba($gray-dark, 0.5);
+  opacity: 0.3;
   z-index: -1;
   transform: skewY(3deg);
   transform-origin: 0;

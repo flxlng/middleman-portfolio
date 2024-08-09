@@ -1,33 +1,36 @@
 // This is where it all goes :)
-// document.addEventListener('DOMContentLoaded', function() {
-//   const images = [
-//     '/images/fuji.jpeg',
-//     '/images/hamburg.jpg'
-//   ];
+document.addEventListener('DOMContentLoaded', function() {
+  const images = [
+    '/images/fuji.jpg',
+    '/images/hamburg.jpg'
+  ];
 
-//   let currentIndex = 0;
+  let currentIndex = 0;
+  let lastSwitchTime = 0; // Variable to store the last switch time
+  const switchInterval = 1000; // Interval in milliseconds (3 seconds)
 
-//   window.addEventListener('scroll', function() {
-//     const scrollPosition = window.scrollY;
-//     const windowHeight = window.innerHeight;
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const currentTime = Date.now(); // Get the current time
 
-//     console.log(scrollPosition, currentIndex, images.length);
-
-//     if (scrollPosition > windowHeight * 0.8) {
-//       currentIndex = (currentIndex + 1) % images.length;
-//       document.body.style.backgroundImage = `url(${images[0]})`;
-//     }
-//     if (scrollPosition < windowHeight * 0.8) {
-//       currentIndex = (currentIndex + 1) % images.length;
-//       document.body.style.backgroundImage = null;
-//     }
-//     // if (scrollPosition < windowHeight / 2) {
-//     //   currentIndex = (currentIndex + 1) % images.length;
-//     //   document.body.style.backgroundImage = `url(${images[1]})`;
-//     //   // document.body.classList.add('bg-opacity-50'); // Add this line
-//     // }
-//   });
-// });
+    console.log(scrollPosition, currentIndex, images.length);
+    if (scrollPosition > windowHeight * 0.5 && (currentTime - lastSwitchTime) > switchInterval) {
+      currentIndex = currentIndex === 0 ? 1 : 0;
+      document.querySelector('.background-image').style.backgroundImage = `url(${images[currentIndex]})`;
+      lastSwitchTime = currentTime; // Update the last switch time
+    }
+    // if (scrollPosition < windowHeight * 0.3) {
+    //   currentIndex = (currentIndex + 1) % images.length;
+    //   document.body.style.backgroundImage = `url(${images[0]})`;
+    // }
+    // if (scrollPosition < windowHeight / 2) {
+    //   currentIndex = (currentIndex + 1) % images.length;
+    //   document.body.style.backgroundImage = `url(${images[1]})`;
+    //   // document.body.classList.add('bg-opacity-50'); // Add this line
+    // }
+  });
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   const avatar = document.querySelector('.avatar');
