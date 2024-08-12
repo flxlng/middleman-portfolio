@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const windowHeight = window.innerHeight;
     const currentTime = Date.now(); // Get the current time
 
-    console.log(scrollPosition, currentIndex, images.length);
+    // console.log(scrollPosition, currentIndex, images.length);
     if (scrollPosition > windowHeight * 0.5 && (currentTime - lastSwitchTime) > switchInterval) {
       currentIndex = currentIndex === 0 ? 1 : 0;
       document.querySelector('.background-image').style.backgroundImage = `url(${images[currentIndex]})`;
