@@ -50,3 +50,15 @@ document.addEventListener('DOMContentLoaded', function() {
     isAnimating = !isAnimating;
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const contactButton = document.querySelector('.contact-button');
+  if (contactButton) {
+    contactButton.addEventListener('click', function() {
+      console.log("clicker");
+      this.classList.toggle('active');
+    });
+  } else {
+    console.error('Element with class .contact-button not found');
+  }
+});
